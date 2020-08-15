@@ -1,0 +1,13 @@
+{
+  "name": "ruby_html_to_pdf",
+  "version": "0.1.0",
+  "description": "A Ruby gem to convert HTML into PDFs using Google Puppeteer.",
+  "main": "index.js",
+  "repository": "git@github.com:sharvy/ruby_html_to_pdf.git",
+  "author": "Sharvy Ahmed <sharvy2008@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "puppeteer": "^5.2.1"
+  }
+}

@@ -1,5 +1,12 @@
+require 'spec_helper'
+
 RSpec.describe RubyHtmlToPdf do
-  it "has a version number" do
-    expect(RubyHtmlToPdf::VERSION).not_to be nil
+  describe 'initialization' do
+    it "accepts URL as the source" do
+      rhtp = RubyHtmlToPdf.new('http://google.com')
+      
+      expect(rhtp.source).to be_url
+      expect(rhtp.source.to_s).to eq('http://google.com')
+    end
   end
 end
